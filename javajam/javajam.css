@@ -4,7 +4,7 @@
 
 body {
     background-color: #FCEBB6;
-    background-image: url(images/fadedroad50.jpg);
+    background-image: url(Images/fadedroad50.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -25,7 +25,7 @@ body {
 
 header {
     background-color: #D2B48C;
-    background-image: url(images/coffeelogo.jpg);
+    background-image: url(Images/coffeelogo.jpg);
     background-repeat: no-repeat;
     color: #231814;
     padding-left: 240px;
@@ -140,21 +140,21 @@ img {
 }
 #homehero {
     height: 300px;
-    background-image: url(images/hero.jpg);
+    background-image: url(Images/hero.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 #heromugs {
     height: 300px;
-    background-image: url(images/heromugs.jpg);
+    background-image: url(Images/heromugs.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 #heroguitar {
     height: 300px;
-    background-image: url(images/heroguitar.jpg);
+    background-image: url(Images/heroguitar.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
