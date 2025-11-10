@@ -37,7 +37,8 @@
 
             <h2>Coffee at JavaJam</h2>
             <p>Indulge in our locally roasted free-trade coffee and enjoy the aroma, the smooth taste,
-                the caffeine! Join our Mug Club and get a 10% discount on each cup of coffee you
+                the caffeine! the caffeine! Join our <a href="#" onmouseover=
+                "alert('JavaJam Mug Club Members get a 10% discount on each cup of coffee!');">Mug Club</a> and get a 10% discount on each cup of coffee you
                 purchase &mdash; ask the barista for details.</p>
                 
             <div id="flow">
@@ -58,10 +59,20 @@
             </div>
         </main>
 
-        <footer>
-            Copyright © 2025 JavaJam Coffee Bar<br>
-            <a href="mailto:Hunter@Forsey.com">Hunter@Forsey.com</a>
-        <footer>
+          <footer>
+            <small><i>Copyright © 2025 JavaJam Coffee Bar<br>
+            <a href="mailto:Hunter@Forsey.com">Hunter@Forsey.com</a></i></small>
+        </footer>
+    </div>
+
+    <div id="last-modified">
+        <script>
+            (function () {
+            var last = new Date(document.lastModified);
+            var msg = "This page was last modified on: " + last.toLocaleString();
+            document.currentScript.parentElement.textContent = msg;
+            })();
+        </script>
     </div>
 <body>      
 

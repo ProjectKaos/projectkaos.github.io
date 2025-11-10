@@ -36,7 +36,14 @@
             </div>
             
             <h2>Music at JavaJam</h2>
-            <p>The first Friday night each month at JavaJam is a special night. Join us from 8 pm to 11 pm for some music you won’t want to miss!</p>
+                <p> The first Friday night each month at JavaJam is a special night.
+                    <span id="senior">Free Friday Coffee Night for Seniors.</span>
+                    Join us from 8 pm to 11 pm for some music you will not want to miss.
+                </p>
+
+            <p id="verify"></p>
+            <script src="js/verifysenior.js"></script> 
+
             <h4>January</h4>
             <div class="details">
                 <a href="Images/melanie.jpg">
@@ -52,14 +59,23 @@
                 </a>
                 Tahoe Greg is back from his tour. New songs. New stories.
             </div>
-
         </main>
 
-        <footer>
-            Copyright © 2025 JavaJam Coffee Bar<br>
-            <a href="mailto:Hunter@Forsey.com">Hunter@Forsey.com</a>
-        <footer>
-    </div>      
+          <footer>
+            <small><i>Copyright © 2025 JavaJam Coffee Bar<br>
+            <a href="mailto:Hunter@Forsey.com">Hunter@Forsey.com</a></i></small>
+        </footer>
+    </div>
+
+    <div id="last-modified">
+        <script>
+            (function () {
+            var last = new Date(document.lastModified);
+            var msg = "This page was last modified on: " + last.toLocaleString();
+            document.currentScript.parentElement.textContent = msg;
+            })();
+        </script>
+    </div>   
 <body>      
 
 <html>

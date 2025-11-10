@@ -52,10 +52,20 @@
 
         </main>
 
-        <footer>
-            Copyright © 2025 JavaJam Coffee Bar<br>
-            <a href="mailto:Hunter@Forsey.com">Hunter@Forsey.com</a>
-        <footer>
+          <footer>
+            <small><i>Copyright © 2025 JavaJam Coffee Bar<br>
+            <a href="mailto:Hunter@Forsey.com">Hunter@Forsey.com</a></i></small>
+        </footer>
+    </div>
+
+    <div id="last-modified">
+        <script>
+            (function () {
+            var last = new Date(document.lastModified);
+            var msg = "This page was last modified on: " + last.toLocaleString();
+            document.currentScript.parentElement.textContent = msg;
+            })();
+        </script>
     </div>
 <body>      
 
