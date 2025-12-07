@@ -243,3 +243,16 @@ tr:nth-of-type(odd) {
 tr:nth-of-type(even) {
     background-color: #CCFFEE;
 }
+
+.video-thumb {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.video-thumb:hover {
+    transform: scale(1.03);
+}
