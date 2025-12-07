@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Slab', Tahoma, Arial, sans-serif;
+    background-color: #FEF6C2;
+    color: #111111;
+    line-height: 1.6;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header {
+    background-color: #FFCC00;
+    color: #111111;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 4px solid #E60000;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #111111;
+}
+
+#tagline {
+    font-size: 1em;
+    font-style: italic;
+    color: #0055AA;
+}
+
+nav {
+    background-color: #E60000;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav li {
+    margin: 0.5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FEF6C2;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #0055AA;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+#hero img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-bottom: 4px solid #111111;
+    margin-bottom: 1em;
+}
+
+main {
+    padding: 1em;
+}
+
+h2 {
+    color: #E60000;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    color: #0055AA;
+    margin-bottom: 0.5em;
+}
+
+.cards, .video-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: 2px solid #111111;
+    border-radius: 6px;
+    padding: 1em;
+    width: 280px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 0.5em;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 0.5em;
+    color: #E60000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    color: #0055AA;
+}
+
+.faq-item {
+    margin-bottom: 1em;
+    border-bottom: 2px solid #111111;
+    padding-bottom: 0.5em;
+}
+
+.faq-item .question {
+    cursor: pointer;
+    color: #E60000;
+}
+
+.faq-item h3 {
+  color: red;
+  cursor: pointer;
+}
+
+.faq-item .answer {
+    margin-top: 0.5em;
+    color: #111111;
+}
+
+footer {
+    background-color: #111111;
+    color: #FEF6C2;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    font-size: 0.9em;
+}
+
+@media (min-width: 600px) {
+    .cards, .video-cards {
+        justify-content: space-around;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    #wrapper {
+        display: grid;
+        grid-template-areas: 
+            "header header"
+            "nav main"
+            "footer footer";
+        grid-template-columns: 250px 1fr;
+        grid-gap: 1em;
+    }
+
+    header {
+        grid-area: header;
+        text-align: left;
+        padding-left: 1em;
+    }
+
+    nav {
+        grid-area: nav;
+        flex-direction: column;
+        align-self: start;
+    }
+
+    main {
+        grid-area: main;
+        padding: 2em;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+
+input, textarea {
+    padding: 0.5em;
+    border: 1px solid #111111;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #E60000;
+    color: #FEF6C2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0055AA;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 1em auto;
+}
+
+th, td {
+    border: 1px solid #111111;
+    padding: 0.5em;
+    text-align: left;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #FEF6C2;
+}
+
+tr:nth-of-type(even) {
+    background-color: #CCFFEE;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sailing Through One Piece</title>
+    <meta name="description" content="A personal journey through One Piece anime with episode reactions, character bios, and fan resources.">
+    <meta name="author" content="Hunter Forsey">
+    <meta name="keywords" content="One Piece, anime, blog, episodes, characters, fan resource">
+
+    <link href="onepiece.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="index.html">Sailing Through One Piece</a></h1>
+            <p id="tagline">My First Voyage Through the Grand Line</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="episodes.html">Episodes</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="videos.html">Recommended Videos</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="hero">
+                <img src="character_placeholder.png" alt="Episodes Hero Image">
+            </div>
+
+            <h2>One Piece Episodes</h2>
+            <p>Here’s my journey through One Piece, episode by episode. Click “Read More” to see my full reactions and notes!</p>
+
+            <section class="cards">
+
+                <div class="card">
+                    <img src="images/episode1.png" alt="Episode 1">
+                    <h4>Episode 1: I’m Luffy!</h4>
+                    <p>Luffy starts his journey and meets new friends.</p>
+                    <p class="extra" style="display:none;">
+                    I love how nonchalant non caring Luffy is. Bro does not care he’s gonna do and say whatever he wants, does not care how anyone else cares or reacts to his behavior. What’s the deal with the whole rubber devil fruit thing?
+                    </p>
+                    <button onclick="toggleExtra(this)">Read More</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/episode2.png" alt="Episode 2">
+                    <h4>Episode 2: Enter Zoro</h4>
+                    <p>Luffy meets Zoro, the swordsman.</p>
+                    <p class="extra" style="display:none;">
+                    Roronoa Zoro has serious aura, probably my favorite character so far. Marine lord is cool (shoutout the hand axe), his son is annoying af. Luffy’s matrix rubber bullet deflection move was crazy. 
+                    </p>
+                    <button onclick="toggleExtra(this)">Read More</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/episode3.png" alt="Episode 3">
+                    <h4>Episode 3: Buggy’s Crew</h4>
+                    <p>First antagonist appears.</p>
+                    <p class="extra" style="display:none;">
+                    Three sword style is crazy work. Ah so devil fruit gives special powers, how many are there? People keep talking about “The grand line”. Zoro wants to be the best swordsman of all time, he says “if he has to give it up”, foreshadowing? Roro’Aura’ Zoro. Who’s the orange haired chick? 
+                    </p>
+                    <button onclick="toggleExtra(this)">Read More</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/episode4.png" alt="Episode 4">
+                    <h4>Episode 4: Adventure Continues</h4>
+                    <p>Exploring more of the world and crew goals.</p>
+                    <p class="extra" style="display:none;">
+                    I still don’t know who this orange haired chick is. Like a side story shown at the same time? Take away your ability to swim? What a dumb consequence of eating a power giving fruit in a highly naval world lol. Shanks and his crew (especially the green fat guy) has serious aura. Wait, so a smokescreen just TP’s you miles away?? Did- did shanks just solo a sea serpent?? I still don’t know who the orange haired chick is. 
+                    </p>
+                    <button onclick="toggleExtra(this)">Read More</button>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <small><i>Copyright © 2025 Sailing Through One Piece<br>
+            <a href="mailto:Hunter@Forsey.com">Hunter@Forsey.com</a></i></small>
+            <div id="last-updated"></div>
+        </footer>
+    </div>
+
+    <div id="last-modified">
+        <script src="js/dateupdate.js"></script>
+    </div>
+        <script src="js/common.js"></script>
+        <script src="js/lastupdated.js"></script>
+        <script>
+        function toggleExtra(button) {
+        var extra = button.previousElementSibling;
+        if (extra.style.display === "none") {
+            extra.style.display = "block";
+            button.textContent = "Show Less";
+        } else {
+            extra.style.display = "none";
+            button.textContent = "Read More";
+        }
+        }
+        </script>
+    </div>
+</body>
+
+</html>

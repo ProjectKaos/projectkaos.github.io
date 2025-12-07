@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sailing Through One Piece</title>
+    <meta name="description" content="A personal journey through One Piece anime with episode reactions, character bios, and fan resources.">
+    <meta name="author" content="Hunter Forsey">
+    <meta name="keywords" content="One Piece, anime, blog, episodes, characters, fan resource">
+
+    <link href="onepiece.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="index.html">Sailing Through One Piece</a></h1>
+            <p id="tagline">Places Explored on the Grand Line</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="episodes.html">Episodes</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="videos.html">Recommended Videos</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Locations</h2>
+            <p>Learn about the islands and cities we visit. Click “View Details” to see more notes and observations.</p>
+
+            <section class="cards">
+
+                <div class="card">
+                    <img src="images/foosha.png" alt="Foosha Village">
+                    <h4>Foosha Village</h4>
+                    <p>Luffy's hometown, peaceful and lively.</p>
+                    <p class="extra" style="display:none;">
+                    Foosha Village resembles a typical rural community, with rustic wooden houses, docks and a few windmills. It is located to the east of the Goa Kingdom capital. 
+                    </p>
+                    <button onclick="toggleExtra(this)">View Details</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/shells.png" alt="Shells Town">
+                    <h4>Shells Town</h4>
+                    <p>Town under Marine control, introduces key conflicts.</p>
+                    <p class="extra" style="display:none;">
+                    Shells Town is located in the Yotsuba Island Region of East Blue. The town is distinguished by its skyline of power plant-shaped towers, each bristling with cannons. It serves as the third setting in the Romance Dawn Arc. 
+                    </p>
+                    <button onclick="toggleExtra(this)">View Details</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/baratie.png" alt="Baratie">
+                    <h4>Baratie</h4>
+                    <p>Floating restaurant, home of Sanji.</p>
+                    <p class="extra" style="display:none;">
+                    The Baratie is an ocean-going restaurant run by Zeff. It is located in the Sambas Region (サンバス海域, Sanbasu Kaiiki?) of the East Blue, close to the Paradise half of the Grand Line.
+                    </p>
+                    <button onclick="toggleExtra(this)">View Details</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <small><i>Copyright © 2025 Sailing Through One Piece<br>
+            <a href="mailto:Hunter@Forsey.com">Hunter@Forsey.com</a></i></small>
+            <div id="last-updated"></div>
+        </footer>
+
+    </div>
+        <div id="last-modified">
+        <script src="js/dateupdate.js"></script>
+    </div>
+        <script src="js/common.js"></script>
+        <script src="js/lastupdated.js"></script>
+        <script>
+        function toggleExtra(button) {
+        var extra = button.previousElementSibling;
+        if (extra.style.display === "none") {
+            extra.style.display = "block";
+            button.textContent = "Show Less";
+        } else {
+            extra.style.display = "none";
+            button.textContent = "View Details";
+        }
+        }
+        </script>
+    </div>
+</body>
+
+</html>

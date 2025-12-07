@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sailing Through One Piece</title>
+    <meta name="description" content="A personal journey through One Piece anime with episode reactions, character bios, and fan resources.">
+    <meta name="author" content="Hunter Forsey">
+    <meta name="keywords" content="One Piece, anime, blog, episodes, characters, fan resource">
+
+    <link href="onepiece.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+          <h1><a href="index.html">Sailing Through One Piece</a></h1>
+          <p id="tagline">Meet the Crew and Friends We Encounter</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="episodes.html">Episodes</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="videos.html">Recommended Videos</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Characters</h2>
+            <p>Here are some of the characters we meet along the journey. Click “View More” to see full bios, impressions, and notes.</p>
+
+            <section class="cards">
+                <div class="card">
+                    <img src="images/luffy.png" alt="Captain">
+                    <h4>Monkey D. Luffy</h4>
+                    <p>Quick info: Energetic, carefree, and aspiring pirate captain.</p>
+                    <p class="extra" style="display:none;">
+                    He pursues the legendary treasure of the late Gol D. Roger in order to become the new Pirate King and reach a further, untold dream (currently known to only his crew, family and closest friends).He believes that being the Pirate King means having the most freedom in the world.
+                    </p>
+                    <button onclick="toggleExtra(this)">View More</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/zoro.png" alt="Swordsman">
+                    <h4>Roronoa Zoro</h4>
+                    <p>Quick info: Swordsman with a dream to be the greatest in the world.</p>
+                    <p class="extra" style="display:none;">
+                    Publicly recognized as the right-hand man and number two of his crew's captain, Monkey D. Luffy. Formerly a bounty hunter, he is the second member of Luffy's crew and the first to join it, doing so in the Romance Dawn Arc.
+                    </p>
+                    <button onclick="toggleExtra(this)">View More</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/nami.png" alt="Navigator">
+                    <h4>Nami</h4>
+                    <p>Quick info: Navigator of the crew, clever and resourceful.</p>
+                    <p class="extra" style="display:none;">
+                    "Cat Burglar" Nami is the navigator of the Straw Hat Pirates and one of the Senior Officers of the Straw Hat Grand Fleet. She is the third member of the crew and the second to join, doing so during the Orange Town Arc. She is the adoptive sister of Nojiko after the two were orphaned and taken in by Bell-mère. 
+                    </p>
+                    <button onclick="toggleExtra(this)">View More</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <small><i>Copyright © 2025 Sailing Through One Piece<br>
+            <a href="mailto:Hunter@Forsey.com">Hunter@Forsey.com</a></i></small>
+            <div id="last-updated"></div>
+        </footer>
+    </div>
+
+    <div id="last-modified">
+        <script src="js/dateupdate.js"></script>
+    </div>
+        <script src="js/common.js"></script>
+        <script src="js/lastupdated.js"></script>
+        <script>
+        function toggleExtra(button) {
+        var extra = button.previousElementSibling;
+        if (extra.style.display === "none") {
+            extra.style.display = "block";
+            button.textContent = "Show Less";
+        } else {
+            extra.style.display = "none";
+            button.textContent = "View More";
+        }
+        }
+        </script>
+    </div>    
+</body>
+
+</html>

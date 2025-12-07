@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sailing Through One Piece</title>
+    <meta name="description" content="A personal journey through One Piece anime with episode reactions, character bios, and fan resources.">
+    <meta name="author" content="Hunter Forsey">
+    <meta name="keywords" content="One Piece, anime, blog, episodes, characters, fan resource">
+
+    <link href="onepiece.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="index.html">Sailing Through One Piece</a></h1>
+            <p id="tagline">My First Voyage Through the Grand Line</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="episodes.html">Episodes</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="videos.html">Recommended Videos</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="hero">
+                <img src="character_placeholder.png" alt="FAQ Hero Image">
+            </div>
+
+            <h2>Frequently Asked Questions</h2>
+            <p>Here are some questions and answers about my experience watching One Piece and navigating this site.</p>
+
+            <section class="faq">
+                <div class="faq-item">
+                    <h4 class="question" onclick="toggleAnswer(this)">Why am I watching One Piece?</h4>
+                    <p class="answer" style="display:none;">I’m watching One Piece because a friend convinced me to start it, and I wanted to document my first-time reactions and thoughts for fun.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 class="question" onclick="toggleAnswer(this)">Will you spoil the story?</h4>
+                    <p class="answer" style="display:none;">No, I try to avoid major spoilers and focus on my personal reactions as I watch each episode.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 class="question" onclick="toggleAnswer(this)">Can I contribute my own thoughts?</h4>
+                    <p class="answer" style="display:none;">Eventually, I might allow guest comments or submissions, but for now it’s just my journey.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 class="question" onclick="toggleAnswer(this)">How often is the site updated?</h4>
+                    <p class="answer" style="display:none;">I update the site as I watch new episodes, so the frequency depends on my viewing pace.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 onclick="toggleAnswer(this)">Is this your first time watching One Piece?</h3>
+                    <p style="display:none;"> Yes, this is my very first time watching One Piece all the way through. I made this site to track my reactions, favorite moments, and how my opinions change as the story grows.
+                </div>
+
+                <div class="faq-item">
+                    <h3 onclick="toggleAnswer(this)">Are you watching sub or dub?</h3>
+                    <p style="display:none;">I am watching the English voice acted version right now, but I might switch to sub at some point depending on how things go. I am mostly focused on enjoying the story and characters.
+                </div>
+
+                <div class="faq-item">
+                    <h3 onclick="toggleAnswer(this)">How often do you update the site?</h3>
+                    <p style="display:none;">I try to update whenever I finish a new batch of episodes. Sometimes that is a few times a week, sometimes a little slower when school gets busy.
+                </div>
+
+                <div class="faq-item">
+                    <h3 onclick="toggleAnswer(this)">Will this site contain spoilers?</h3>
+                    <p style="display:none;">Yes, there will be spoilers for the episodes that I have already watched. I try not to spoil future arcs on purpose, but if you are behind what I have seen, just be careful.
+                </div>
+
+                <div class="faq-item">
+                <h3 onclick="toggleAnswer(this)">Who is your favorite character so far?</h3>
+                <p style="display:none;">This changes a lot as I keep watching. Right now I really love Zoro.
+
+            </section>
+        </main>
+
+        <footer>
+            <small><i>Copyright © 2025 Sailing Through One Piece<br>
+            <a href="mailto:Hunter@Forsey.com">Hunter@Forsey.com</a></i></small>
+            <div id="last-updated"></div>
+        </footer>
+    </div>
+
+    <div id="last-modified">
+        <script src="js/dateupdate.js"></script>
+    </div>
+        <script src="js/common.js"></script>
+        <script src="js/lastupdated.js"></script>
+        <script>
+        function toggleAnswer(el) {
+        const answer = el.nextElementSibling;
+        if(answer.style.display === "none") {
+            answer.style.display = "block";
+        } else {
+            answer.style.display = "none";
+        }
+        }
+        </script>
+    </div>
+</body>
+
+</html>
